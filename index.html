@@ -1,0 +1,143 @@
+<!doctype html>
+<HTML lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<script>
+			function toggle(divId){
+				var arr = document.getElementById(divId)
+				arr.style.display = (arr.style.display == 'none')? 'block':'none';
+			}
+		</script>
+
+		<style>
+			a:visited{
+				color:#777777;
+			}
+			body{
+				font-family: "Trebuchet MS";
+				color: #F9F9F3;
+				margin-top: 60px;
+				margin-right: 200px;
+				margin-bottom: 10px;
+				margin-left: 200px;
+				background-color: #131200;
+				
+			}
+
+			header{
+				font-size: 20pt;
+			}
+			h1{
+				font-size:larger; margin:0; 
+			}
+
+			.alignleft{
+				text-align: left;
+				float: left
+			}
+			.alignright{
+				text-align: right;
+				float: right
+			}
+			.center{
+				text-align: center;
+			}
+			
+			.rightindent{
+				margin-left: 50px;
+			}
+			.sectionheading:before{
+				background: #6EAB59; 
+				border-radius: 5px; 
+				content: "+"; 
+				color: #fff;  
+				font-size: 1.5em; 
+				font-weight: bold; 
+				margin: 5px 5px 5px 5px; 
+				padding: 2px; 
+				text-align: center; 
+			}
+			.sectionheading:link{
+				text-decoration: none;
+				color: black;
+			}
+			#content{
+				border-radius: 20px;
+				font-family: "Trebuchet MS";
+				color: black;
+				margin-top: 0px;
+				margin-right: 0px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				padding: 20px;
+				background-color: #F9F9F3;
+			}
+		</style>
+
+		<title>
+			Phil Arevalo
+		</title>
+	</head>
+
+	<body>
+			<div id="content">
+				<header>
+				<p class = "alignright"><img src = "img/honeycreeper.jpg" height=200 width =200 alt="Human smiling next to phylogeny of honeycreepers"></p>
+				<p class="alignleft"><h1><br><br><b>Phil Arevalo</b></h1>
+				<small>Ph.D. Candidate, MIT Microbiology Program<br>
+				parevalo [at] mit [dot] edu</small>
+				</header>
+				
+				<div style="clear: both;">
+			</div>
+			
+			<hr>
+			<div class="rightindent">
+				<h1><a href="javascript:void(0);" onclick="toggle('About');" class="sectionheading">About</a></h1>
+				<div class="rightindent" id ="About" style="display:none">
+					<p>I'm a 5th year Ph.D. candidate in the <a href = "http://microbiology.mit.edu">Microbiology Graduate Program</a> at MIT. Working with <a href = "http://polzlab.mit.edu">Martin Polz</a>, I've spent most of my time using bioinformatics techniques to unravel the evolutionary dynamics of the <i>Vibrionaceae</i> to get a better understanding of how ecology and evolution interact.</p>
+					
+					<p>Prior to my time at MIT, I completed my undergraduate degree at Brown University in Applied Mathematics-Biology and Classics doing work with <a href = "http://www.umaine.edu/marine/people/profile/jeremy_rich">Jeremy Rich</a> to understand the community composition of anammox bacteria. I've also worked as a research assistant in the lab of <a href = "http://www.whoi.edu/page.do?pid=18956">Stefan Sievert</a> at the Woods Hole Oceanographic Institution using high throughput sequencing to investigate the microbial communities at hydrothermal vents and oxygen minimum zones.</p>
+					
+					<p>When I'm not coding the day away, I get to spend lots of time with undergraduate students as a Graduate Resident Tutor at <a href = "http://web.mit.edu/random-hall/www/">Random Hall</a>! I've also enjoyed doing music and theater throughout my life. I've been an active member of <a href = "http://gsp.mit.edu">MIT Gilbert & Sullivan Players</a> during my time at MIT and I also enjoy doing covers of indie rock songs, a couple of which you can listen to <a href = "https://soundcloud.com/phil-arevalo">here</a>.</p>
+				</div>
+			</div>
+			
+			<br>
+
+			<div class="rightindent">
+				<h1><a href="javascript:void(0);" onclick="toggle('Research');" class="sectionheading">Research</a></h1>
+				<div class="rightindent" id ="Research" style="display:none">
+					<p>The ability of microbes to exchange genetic material truly sets them apart from other forms of life. It's probably most famous for its role in the rapid spread of antibiotic resistance, but horizontal gene transfer (HGT) is an important facet of many evolutionary and ecological processes. I want to understand how HGT functions as both as a driver of microbial diversification <i>and</i> a force that allows microbes to form cohesive evolutionary units.</p>
+				</div>
+			</div>
+			<br>
+
+			<div class="rightindent">
+				<h1><a href="javascript:void(0);" onclick="toggle('Code');" class="sectionheading">Code</a></h1>
+				<div class="rightindent" id ="Code" style="display:none">
+					<p>Most of my code is written in Python, although I am also familiar with MATLAB and first cut my programming teeth many moons ago using Java. You can find some of the code I've written on my <a href="https://github.com/philarevalo">github</a>.</p>
+				</div>
+			</div>
+			<br>
+
+			<div class="rightindent">
+				<h1><a href="javascript:void(0);" onclick="toggle('Publications');" class="sectionheading">Publications</a></h1>
+				<div class="rightindent" id ="Publications" style="display:none">
+					<p>Hehemann, J.-H., <b> Arevalo, P.</b>, Datta, M.S., Yu, X., Corzett, C., Preheim., S.P., Henschel, A., Timberlake, S., Alm, E.J., Polz, M.F. (2016).  <i><a href="http://www.nature.com/ncomms/2016/160922/ncomms12860/full/ncomms12860.html">Adaptive radiation by waves of gene transfer leads to fine-scale resource partitioning in marine microbes</a></i>. Nature Communications, 7. Article number: 12860. doi:10.1038/ncomms12860.</p>
+
+					<p>Chase, A.B., <b>Arevalo, P.</b>, Polz, M.F., Berlemont, R., Martiny, J.B.H. (2016). <i><a href='http://journal.frontiersin.org/article/10.3389/fmicb.2016.01874/full'>Evidence for ecological flexibility in the cosmopolitan genus Curtobacterium</a></i>. Frontiers in Microbiology, 7:1874. doi:10.3389/fmicb.2016.01874</p>
+				</div>
+			</div>
+			<br>
+
+			<div class="rightindent">
+			<h1><a href="javascript:void(0);" onclick="location.href = 'CV/Arevalo_CV_22Apr2017.pdf';" class="sectionheading">CV</a></h1>
+			</div>
+			</div>
+			<br>
+
+		<hr>
+		Last updated 22 April 2017. Website template modified from <a href = "http://cermak.scripts.mit.edu/">Nate Cermak</a>
+	</body>
+</html>
